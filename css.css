@@ -340,3 +340,34 @@ p {
 .contact-info {
   padding-right: 2rem;
 }
+/* ======================== 
+ ========= Gallery =========
+ ==========================*/
+.gallery-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-img-container {
+  position: relative;
+  flex: 0 0 25%;
+}
+.gallery-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-black);
+  transition: var(--transition);
+  opacity: 0;
+}
+.gallery-img {
+  object-fit: cover;
+  height: 17rem;
+  transition: var(--transition);
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
