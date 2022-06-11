@@ -319,3 +319,24 @@ p {
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
+/* ======================== 
+ ========= Contact =========
+ ==========================*/
+.contact {
+  background: #8aa29e;
+}
+.contact-items {
+  display: flex;
+}
+.form-group {
+  display: inline;
+}
+.input {
+  padding: 0.5rem;
+  border: none;
+  width: 30vw;
+  border-radius: 0.25rem;
+}
+.contact-info {
+  padding-right: 2rem;
+}
