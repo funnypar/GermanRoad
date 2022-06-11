@@ -371,3 +371,38 @@ p {
 .gallery-img-container:hover .gallery-img {
   opacity: 0.5;
 }
+/* ======================== 
+ ========= Footer =========
+ ==========================*/
+footer {
+  background: #154646;
+}
+.footer-link {
+  color: wheat;
+  padding-left: 1.5rem;
+  transition: var(--transition);
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+}
+.footer-link:hover {
+  transform: scale(1.2);
+  color: antiquewhite;
+}
+.footer-icon {
+  color: #fff;
+  padding: 2rem 1rem;
+  transition: var(--transition);
+}
+.footer-icon:hover {
+  color: #0d0a0b;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+.footer-text {
+  text-align: center;
+  color: wheat;
+}
