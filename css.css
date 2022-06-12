@@ -116,6 +116,27 @@ p {
     width: 95vw;
   }
 }
+/* Animation */
+@keyframes title {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* =============================================== Start CSS Codes ======================= */
 /* ======================== 
  ========= Hero =========
@@ -127,6 +148,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 .hero-banner {
   text-align: center;
@@ -405,4 +427,64 @@ footer {
 .footer-text {
   text-align: center;
   color: wheat;
+}
+/* ======================== 
+ ========= Navbar =========
+ ==========================*/
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+  width: 100vw;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  border-radius: 0 0 20px 20px;
+}
+.navbar-link {
+  margin-bottom: 10px;
+  margin-left: 2rem;
+  font-weight: 500;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 9px;
+  text-align: center;
+  padding: 0.25rem 0.75rem;
+  transition: var(--transition);
+  color: #3c3cf7;
+  font-weight: bolder;
+  font-family: var(--ff-grand);
+  font-size: 115%;
+}
+.navbar-link:hover {
+  box-shadow: none;
+  color: black;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10vw;
+}
+.navbar-icon {
+  transition: var(--transition);
+  color: #3c3cf7;
+}
+.navbar-icon:hover {
+  color: #0d0a0b;
+}
+.navbar-text span {
+  text-transform: capitalize;
+  color: #3c3cf7;
 }
